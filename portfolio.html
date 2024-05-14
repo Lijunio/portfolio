@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCPIJS0ZvPeGzD9/fOW+RUq5fQ6JAgBEKsBcO6U7RJH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-u3+pwD1+vPzH0k4xM3+4qQe5L/5eFp5i5tZvOwW8EpKp5C1oLAfyf0eCQI4YUjD3" crossorigin="anonymous">
+
+
+  </head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="header-info">
+            <p id="header-nome">Elias J. Souza Ribeiro</p>
+            <p id="header-profissao">Desenvolvedor Front-End</p>
+          </div>
+        </div>
+        <div class="header-right">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Início</a></li>
+              <li><a href="./resume.html">Resumo</a></li>
+              <li><a href="./portfolio.html">Projetos</a></li>
+              <li><a href="./contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="portfolio">
+    <section>
+        <h1>Portfólio</h1>
+        <p class="especificações">Seja bem-vindo ao meu espaço criativo, onde os códigos ganham vida e a programação se transforma em realidade!!</p>
+    </section>
+  </br>
+    <section class="projects">  
+    <div class="project">
+        <video controls>
+            <source src="/portfolio/ihelp.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <h2>iHelp</h2>
+        <p class="description" style="display: none;">
+          Sistema de Service Desk de código aberto (GLPI) com as modificações realizadas para atender às demandas da empresa, tanto a parte de desiger quanto funcionalidade.<br>
+          Além disso, foi inserdida a funcionalidade de gerenciamento de almoxarifado e controle de entrada e saída de equipamentos, bem como a funcionalidade de reserva de sala.<br>
+          Assista ao vídeo e observe as melhorias realizadas no sistema para atender à demanda da empresa.
+        </p>
+        <span class="show-description" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
+    </div>
+    
+    <div class="project">
+        <a href="https://lijunio.github.io/amigo-oculto-2023/" target="_blank" rel="noopener noreferrer">
+            <img src="/portfolio/fundoAmigoOculto.png" class="img-fluid" alt="Projeto 3">
+        </a>
+        <h2>Amigo Oculto Natal Família Souza</h2>
+        <p class="description" style="display: none;">
+Este projeto utiliza JavaScript, HTML/CSS e o GitHub para organizar e executar o sorteio do amigo oculto entre membros da família. Oferece sorteio aleatório, restrições personalizadas e feedback interativo por meio de um pop-up.<br>
+Ao final do sorteio, o sistema gera automaticamente um arquivo de resultado para download, facilitando a distribuição dos resultados entre os participantes.<br>
+Eu fiz esse site pois não queria pagar sorteio em outros sites, pois tinha muitas restrições.
+        </p>
+        <span class="show-description" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
+    </div>
+    <div class="project">
+        <a href="https://danirpadua.github.io/descomplica" target="_blank" rel="noopener noreferrer">
+            <img src="/portfolio/descomplica.png" class="img-fluid" alt="Projeto 1">
+        </a>
+        <h2>Em construção</h2>
+        <p class="description" style="display: none;"> 
+          Website de consultoria acadêmica desenvolvido utilizando as linguagens HTML, CSS, JavaScript e PHP com o intuito de oferecer uma experiência fluida e interativa aos usuários.<br> 
+          A interação permite explorar a variedade de serviços acadêmicos ofertados.<br>
+          Além disso, foi incluída a funcionalidade de solicitação de orçamentos através do preenchimento de formulários e conexão direta com o e-mail e contato direto através de API com o WhatsApp do consultor para resolução de dúvidas. </p>
+        <span class="show-description" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
+    </div>
+</section>
+</main>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script> 
+<script src="script.js"></script>
+</body>
+</html>

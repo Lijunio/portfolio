@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    width: 85%; 
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px; 
+
+}
+
+#imagem {
+    max-width: 250px;
+}
+
+.left-square, .right-square {
+    box-sizing: border-box;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    font-size: 16px; 
+}
+
+.left-square {
+    background-color: #fff;
+    text-align: center;
+}
+
+.right-square {
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.about-info {
+    padding: 20px;
+}
+
+.about-info p {
+    line-height: 1.5;
+}
+
+.linkedin-button, .resume-button, .portfolio-button {
+    display: inline-block;
+    padding: 10px 40px; 
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 5px; 
+    font-size: 14px; 
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    margin-top: 280px; /* Ajuste conforme necessário para garantir espaço acima do footer */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-square, .right-square {
+        width: 100%; 
+    }
+
+    .linkedin-button, .resume-button, .portfolio-button {
+        padding: 10px 20px; 
+    }
+}
