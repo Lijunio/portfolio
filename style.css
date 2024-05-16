@@ -96,49 +96,22 @@ header {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
 
-.card {
-    width: 80%;
-    margin: 10px;
+.scroll-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 80%;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .scroll-container .card {
+    min-width: 300px;
+    flex: 0 0 auto;
+  }
+  .scroll-container .card img {
+    width: 100%;
     height: auto;
     max-height: 300px;
     object-fit: cover;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+  }
 
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
