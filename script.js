@@ -44,7 +44,7 @@ if (window.innerWidth > minWidthForChatbot) {
             bar.parentElement.classList.add('completed');
             text.textContent = '100% Concluído';
         } else {
-            text.textContent = '40%';
+            text.textContent = '40% Concluído';
         }
     }
 
