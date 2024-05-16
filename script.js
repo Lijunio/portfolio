@@ -1,19 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.show-description').forEach(function(element) {
-        element.addEventListener('click', function() {
-            var description = this.previousElementSibling;
-            if (description.classList.contains('d-none')) {
-                description.classList.remove('d-none');
-                this.textContent = 'Ocultar Descrição';
-            } else {
-                description.classList.add('d-none');
-                this.textContent = 'Descrição do Projeto';
-            }
-        });
-    });
-});
-
-    // Define o limite de largura da tela para inicializar o Blip Chat
+ // Define o limite de largura da tela para inicializar o Blip Chat
     var minWidthForChatbot = 768;
 
     // Verifica se a largura da janela é maior que o limite definido
@@ -27,3 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
             .build();
         })();
     }
+
+    function updateProgress(barId, textId, percentage) {
+        var bar = document.getElementById(barId);
+        var text = document.getElementById(textId);
+        bar.style.width = percentage + '%';
+        if (percentage >= 100) {
+            bar.parentElement.classList.add('completed');
+            text.textContent = 'Concluído';
+        } else {
+            text.textContent = percentage + '%';
+        }
+    }
+
+    // Atualiza as barras de progresso com as porcentagens desejadas
+    updateProgress('progress-1', 'progress-text-1', 100);
+    updateProgress('progress-2', 'progress-text-2', 40);    
