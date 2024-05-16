@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
     // Define o limite de largura da tela para inicializar o Blip Chat
     var minWidthForChatbot = 768;
 

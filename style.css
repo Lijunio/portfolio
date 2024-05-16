@@ -123,6 +123,11 @@ header {
   .card-title {
     text-align: center;
   }
+
+  .show-description {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Contato*/
 
