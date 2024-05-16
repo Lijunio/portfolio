@@ -96,24 +96,7 @@ header {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
 
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px; /* Defina a altura que deseja para os itens do carrossel */
-  }
-  
-  .carousel-item img {
-    max-width: 80%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-  }
-  
+
 
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
