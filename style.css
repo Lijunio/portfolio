@@ -39,45 +39,6 @@ main {
 }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
-/*COMPETÊNCIAS*/
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.button-style {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: 10px;
-}
-
-.button-style .button-content {
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.button-style .button-content img {
-    margin-right: 10px;
-    width: 40px;
-}
-
-.button-style .button-content span {
-    flex: 1;
-    overflow: hidden;
-}
-
-.button-style .button-content:hover {
-    background-color: #444;
-}
-
-/*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*FORMAÇÃO*/
 .timeline {
     margin-bottom: 30px;
@@ -137,23 +98,6 @@ p.especificacoes {
     font-size: 20px;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.project {
-    background: #fff;
-    color: black;
-    text-align: center;
-    padding: 20px;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-}
 
 .description {
     text-align: left;
