@@ -3,15 +3,19 @@
 
     // Verifica se a largura da janela é maior que o limite definido
     if (window.innerWidth > minWidthForChatbot) {
+        
         // Inicializa o Blip Chat apenas se a largura da tela for maior que o limite
         (function () {
             window.onload = function () {
-               // Vibrar a tela a cada 5 segundos
-        if (navigator.vibrate) {
-            setInterval(function() {
+               // Função para vibrar a tela
+        function vibrateScreen() {
+            if (navigator.vibrate) {
                 navigator.vibrate(200);
-            }, 5000);
+            }
         }
+        // Configurar a vibração a cada 5 segundos (5000 milissegundos)
+        setInterval(vibrateScreen, 5000);
+
                 var blipClient = new BlipChat();
                 blipClient.withAppKey('cG9ydGlmb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
             .withEventHandler(BlipChat.LOAD_EVENT, function () {
