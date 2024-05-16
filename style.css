@@ -165,7 +165,7 @@ header {
 .progress-container {
     width: 100%;
     background-color: white;
-    border: black;
+    border: 1px solid black;
     border-radius: 25px;
     margin-top: 10px;
     overflow: hidden;
