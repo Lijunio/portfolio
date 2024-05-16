@@ -134,6 +134,7 @@ header {
 .card-title {
     text-align: center;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .card-body {
