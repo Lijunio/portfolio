@@ -165,6 +165,7 @@ header {
 .progress-container {
     width: 100%;
     background-color: white;
+    border: black;
     border-radius: 25px;
     margin-top: 10px;
     overflow: hidden;
@@ -190,7 +191,7 @@ header {
 
 .progress-container.completed .progress-bar {
     width: 100%;
-    background-color: #4caf50;
+    background-color: #333;
 }
 
 .progress-container.completed .progress-bar span {
