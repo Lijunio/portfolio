@@ -21,7 +21,7 @@
             bar.parentElement.classList.add('completed');
             text.textContent = '100% Concluído';
         } else {
-            text.textContent = percentage + '%';
+            text.textContent = '40%';
         }
     }
 
