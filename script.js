@@ -27,4 +27,4 @@
 
     // Atualiza as barras de progresso com as porcentagens desejadas
     updateProgress('progress-1', 'progress-text-1', 100);
-    updateProgress('progress-2', 'progress-text-2', 40);    
+    updateProgress('progress-2', 'progress-text-2', 40);
