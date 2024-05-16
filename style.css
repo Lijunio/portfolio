@@ -190,7 +190,7 @@ header {
 }
 
 .progress-container.completed .progress-bar span {
-    color: white;
+    color: #333;
     font-weight: bold;
 }
 
