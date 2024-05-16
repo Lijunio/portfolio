@@ -99,20 +99,29 @@ header {
 .card-group {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os cartões */
+    justify-content: center;
 }
 
 .card {
-    flex: 1 1 300px;
+    flex: 1 1 250px;
+    max-width: 250px;
     margin: 10px;
-    max-width: 300px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #ddd; /* Adiciona uma borda para visualização */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    overflow: hidden;
 }
 
 .card-img-top {
     width: 80%;
-    height: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
     object-fit: cover;
+    padding-top: 10px;
 }
 
 .card-title {
@@ -125,6 +134,7 @@ header {
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .card-text {
