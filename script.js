@@ -3,26 +3,23 @@ var minWidthForChatbot = 768;
 
 // Verifica se a largura da janela é maior que o limite definido
 if (window.innerWidth > minWidthForChatbot) {
-    window.onload = function () {
-        var blipClient = new BlipChat();
-        blipClient.withAppKey('cG9ydGlmb2xpb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
-        .withEventHandler(BlipChat.LOAD_EVENT, function () {
-            blipClient.sendMessage({
-                "type": "text/plain",
-                "content": "Olá"
-            });
-
-            // Adiciona a classe 'shake' ao botão do Blip Chat
-            var chatbotButton = document.querySelector('.blip-chat-widget-launcher-button');
-            if (chatbotButton) {
-                chatbotButton.classList.add('shake');
-            }
-        })
-        .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
-        .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
-        .build();
-    };
+    (function () {
+        window.onload = function () {
+            var blipClient = new BlipChat();
+            blipClient.withAppKey('cG9ydGlmb2xpb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
+            .withEventHandler(BlipChat.LOAD_EVENT, function () {
+                blipClient.sendMessage({
+                    "type": "text/plain",
+                    "content": "Olá"
+                });
+            })
+            .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
+            .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
+            .build();
+        };
+    })();
 }
+
 
 
     function updateProgress(barId, textId, percentage) {
