@@ -115,11 +115,11 @@ header {
   }
   .card-img-top {
     width: 80%;
-    margin: 10px auto 0; /* Espaço do topo e centralização */
+    margin: 10px auto 0; 
     height: auto;
     display: block;
   }
-  
+
   .card-title {
     text-align: center;
   }
