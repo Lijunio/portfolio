@@ -95,7 +95,20 @@ header {
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
-
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Contato*/
