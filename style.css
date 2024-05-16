@@ -4,180 +4,54 @@ body {
     padding: 0;
 }
 
-.container {
-    width: 70%; 
-    margin: 0 auto;
-}
-
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*CABEÇALHO*/
-
 header {
     background-color: #333;
     color: #fff;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.header-left, .header-right {
-    padding-top: 20px; 
-}
-
-.header-right {
-    font-size: 18px;
-    text-align: left; 
-}
-
-.header-info p {
-    margin: 0; 
-}
-
-header nav ul {
-    list-style-type: none;
+.header-info h1, .header-info p {
     margin: 0;
-    padding: 0;
-    display: flex; 
-}
-
-header nav ul li {
-    margin-left: 50px; 
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none; 
-}
-
-@media screen and (max-width: 768px) {
-    .header-content {
-        flex-direction: column; 
-    }
-
-    .header-left, .header-right {
-        flex-basis: 100%; 
-        padding: 10px 0; 
-        text-align: center; 
-        order: 0; 
-    }
-
-    .header-right {
-        display: flex; 
-        justify-content: center; 
-        flex-wrap: wrap;
-    }
-
-    header nav ul {
-        flex-direction: row; 
-        justify-content: center; 
-        padding-top: 10px; 
-    }
-
-    header nav ul li {
-        margin: 0 10px; 
-    }
-}
-
-/*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
-/*LETRAS*/
-
-
-#header-nome, #header-profissao {
     font-weight: bold;
 }
 
-#header-nome {
+.header-info h1 {
     font-size: 28px;
-    margin: 0;
 }
 
-#header-profissao{
+.header-info p {
     font-size: 18px;
-    margin: 0; 
-}
-
-#subtitulo {
-    font-size: 24px;
 }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /* PAGINA CENTRAL */
 main {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
+    width: 100%;
     padding: 10px 20px;
 }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*RESUMO*/
-
 #imagem-elijunio {
     width: 200px;
     border-radius: 50%;
 }
 
-.resumo {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .resumo-esquerdo {
-    margin-right: 20px; 
-  }
-  
-  .resumo-direito {
-    flex: 1; 
-  }
-  
-
-section {
-    margin-bottom: 40px;
-}
-
-
-.competencias-container {
-    display: flex;
-}
-
-.camada {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.camada:last-child {
-    margin-right: 0;
-}
-
-h3 {
-    margin-top: 0;
-}
-
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*COMPETÊNCIAS*/
-
 .button-container {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; 
-    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .button-style {
-    margin-right: 40px; 
-    margin-bottom: 10px; 
-    flex: 1; 
-    min-width: 250px; 
-}
-
-.button-style:last-child {
-    margin-right: 0;
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 10px;
 }
 
 .button-style .button-content {
@@ -187,70 +61,40 @@ h3 {
     padding: 10px;
     display: flex;
     align-items: center;
-    width: 100%;
-    height: auto;
 }
 
 .button-style .button-content img {
     margin-right: 10px;
-    width: 40px; 
-    height: auto;
+    width: 40px;
 }
 
 .button-style .button-content span {
     flex: 1;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .button-style .button-content:hover {
     background-color: #444;
 }
 
-
-@media screen and (max-width: 768px) {
-    .button-style {
-        flex-basis: 100%; 
-        margin-right: 0; 
-        margin-bottom: 10px; 
-    }
-}
-
-
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*FORMAÇÃO*/
-
- .timeline { 
-    margin-bottom: 30px; 
+.timeline {
+    margin-bottom: 30px;
     font-size: 18px;
 }
 
-.timeline .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
 }
-
-.timeline-list {
-  font-size: var(--fs-6);
-  margin-left: 45px;
-}
-
-.timeline-item { position: relative; }
-
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
 
 .timeline-item-title {
-  line-height: 1.3;
-  margin-bottom: 7px;
+    line-height: 1.3;
+    margin-bottom: 7px;
 }
 
-.timeline ol {
-    list-style-type: none;
-    padding-left: 0; 
-}
-
-.timeline-item:not(:last-child)::before {
+.timeline-item::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -269,7 +113,7 @@ h3 {
     width: 8px;
     background: black;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--jet);
+    box-shadow: 0 0 0 4px #333;
 }
 
 .timeline-text {
@@ -278,99 +122,56 @@ h3 {
 }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
-/*Experiencias */
-
- .experiencias {
-    list-style-type: none;
-    padding-left: 0; 
-    margin-left: 50px;
-}
-.experiencias ul{
-font-size: 14px;
+/*Experiências*/
+.experiencias ul {
+    font-size: 14px;
 }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
-
-main.portfolio {
-    width: 68%;
-}
-
 .portfolio h1 {
-    font-size: 28px; 
+    font-size: 28px;
 }
 
-p.especificações {
-    font-size: 20px; 
+p.especificacoes {
+    font-size: 20px;
 }
-
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
 .project {
-    background: linear-gradient(to bottom, #333 0%, #fff 100%);
+    background: #fff;
     color: black;
     text-align: center;
     padding: 20px;
 }
 
-.project video, .project img {
-    width: 350px;
-    height: 200px;
+.project img {
+    width: 100%;
+    height: auto;
 }
 
 .description {
     text-align: left;
 }
 
-.strikethrough {
-    text-decoration: line-through;
+.show-description {
+    cursor: pointer;
+    text-decoration: underline;
 }
-
-@media screen and (max-width: 768px) {
-    .projects {
-        grid-template-columns: 1fr; 
-    }
-
-    
-    .button-style {
-        flex-basis: 100%; 
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-}
-
-
-
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Contato*/
-
-.no-scroll {
-    overflow-x: hidden; 
-}
-
-.main {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto;
-    flex-wrap: wrap; 
-}
-
 .main .contato-left,
 .main .contato-right {
-    flex: 1 0 48%; 
-    box-sizing: border-box; 
     padding: 20px;
     margin-top: 10px;
-    line-height: 2.5; 
-    font-size: 28px; 
+    line-height: 2.5;
+    font-size: 28px;
 }
 
 .contato-left {
@@ -380,27 +181,12 @@ p.especificações {
 
 .contato-right {
     background-color: white;
-    color: black; 
+    color: black;
 }
 
 .contato-left p, .contato-right p {
-    font-size: 19px; 
+    font-size: 19px;
 }
-
-@media screen and (max-width: 768px) {
-    .main {
-        flex-direction: column; 
-    }
-
-    .main .contato-left,
-    .main .contato-right {
-        flex: 0 0 100%; 
-        font-size: 18px; 
-        margin-bottom: 20px; 
-    }
-}
-
-
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*RODAPE*/
@@ -410,4 +196,27 @@ footer {
     text-align: center;
     height: 40px;
     width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 768px) {
+    .header-info h1, .header-info p {
+        text-align: center;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .button-style {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }

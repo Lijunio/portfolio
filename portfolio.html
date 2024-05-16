@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCPIJS0ZvPeGzD9/fOW+RUq5fQ6JAgBEKsBcO6U7RJH" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-u3+pwD1+vPzH0k4xM3+4qQe5L/5eFp5i5tZvOwW8EpKp5C1oLAfyf0eCQI4YUjD3" crossorigin="anonymous">
-
-
-  </head>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <div class="header-left">
-          <div class="header-info">
-            <p id="header-nome">Elias J. Souza Ribeiro</p>
-            <p id="header-profissao">Desenvolvedor Front-End</p>
-          </div>
-        </div>
-        <div class="header-right">
-          <nav>
-            <ul>
-              <li><a href="./index.html">Início</a></li>
-              <li><a href="./resume.html">Resumo</a></li>
-              <li><a href="./portfolio.html">Projetos</a></li>
-              <li><a href="./contato.html">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="header-info">
+        <h1 class="h4" id="header-nome">Elias J. Souza Ribeiro</h1>
+        <p class="mb-0" id="header-profissao">Desenvolvedor Front-End</p>
       </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./resume.html">Resumo</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./portfolio.html">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="portfolio">
-    <section>
-        <h1>Portfólio</h1>
-        <p class="especificações">Seja bem-vindo ao meu espaço criativo, onde os códigos ganham vida e a programação se transforma em realidade!!</p>
+  <main class="container my-5">
+    <section class="text-center mb-5">
+      <h1>Portfólio</h1>
+      <p class="lead">Seja bem-vindo ao meu espaço criativo, onde os códigos ganham vida e a programação se transforma em realidade!</p>
     </section>
-  </br>
-    <section class="projects">     
-    <div class="project">
-        <a href="https://lijunio.github.io/amigo-oculto-2023/" target="_blank" rel="noopener noreferrer">
-            <img src="./projetos/fundoAmigoOculto.png" class="img-fluid" alt="Projeto 3">
-        </a>
-        <h2>Amigo Oculto Natal Família Souza</h2>
-        <p class="description" style="display: none;">
-Este projeto utiliza JavaScript, HTML/CSS e o GitHub para organizar e executar o sorteio do amigo oculto entre membros da família. Oferece sorteio aleatório, restrições personalizadas e feedback interativo por meio de um pop-up.<br>
-Ao final do sorteio, o sistema gera automaticamente um arquivo de resultado para download, facilitando a distribuição dos resultados entre os participantes.<br>
-Eu fiz esse site pois não queria pagar sorteio em outros sites, pois tinha muitas restrições.
-        </p>
-        <span class="show-description" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
-    </div>
-    <div class="project">
-        <a href="https://danirpadua.github.io/descomplica" target="_blank" rel="noopener noreferrer">
-            <img src="./projetos/descomplica.png" class="img-fluid" alt="Projeto 1">
-        </a>
-        <h2>Em construção</h2>
-        <p class="description" style="display: none;"> 
-          Website de consultoria acadêmica desenvolvido utilizando as linguagens HTML, CSS, JavaScript e PHP com o intuito de oferecer uma experiência fluida e interativa aos usuários.<br> 
-          A interação permite explorar a variedade de serviços acadêmicos ofertados.<br>
-          Além disso, foi incluída a funcionalidade de solicitação de orçamentos através do preenchimento de formulários e conexão direta com o e-mail e contato direto através de API com o WhatsApp do consultor para resolução de dúvidas. </p>
-        <span class="show-description" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
-    </div>
-</section>
-</main>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script> 
-<script src="script.js"></script>
+    <section class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://lijunio.github.io/amigo-oculto-2023/" target="_blank" rel="noopener noreferrer">
+            <img src="./projetos/fundoAmigoOculto.png" class="card-img-top img-fluid" alt="Projeto 3">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Amigo Oculto Natal Família Souza</h5>
+            <p class="card-text description d-none">
+              Este projeto utiliza JavaScript, HTML/CSS e o GitHub para organizar e executar o sorteio do amigo oculto entre membros da família. Oferece sorteio aleatório, restrições personalizadas e feedback interativo por meio de um pop-up.
+              Ao final do sorteio, o sistema gera automaticamente um arquivo de resultado para download, facilitando a distribuição dos resultados entre os participantes.
+              Eu fiz esse site pois não queria pagar sorteio em outros sites, pois tinha muitas restrições.
+            </p>
+            <span class="show-description text-primary" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="https://danirpadua.github.io/descomplica" target="_blank" rel="noopener noreferrer">
+            <img src="./projetos/descomplica.png" class="card-img-top img-fluid" alt="Projeto 1">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Em construção</h5>
+            <p class="card-text description d-none">
+              Website de consultoria acadêmica desenvolvido utilizando as linguagens HTML, CSS, JavaScript e PHP com o intuito de oferecer uma experiência fluida e interativa aos usuários.
+              A interação permite explorar a variedade de serviços acadêmicos ofertados.
+              Além disso, foi incluída a funcionalidade de solicitação de orçamentos através do preenchimento de formulários e conexão direta com o e-mail e contato direto através de API com o WhatsApp do consultor para resolução de dúvidas.
+            </p>
+            <span class="show-description text-primary" style="text-decoration: underline; cursor: pointer;">Descrição do Projeto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+  <script src="script.js"></script>
 </body>
 </html>
