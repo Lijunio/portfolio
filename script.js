@@ -1,23 +1,23 @@
 // Define o limite de largura da tela para inicializar o Blip Chat
 var minWidthForChatbot = 768;
 
-// Define o limite de largura da tela para inicializar o Blip Chat
-var minWidthForChatbot = 768;
-
 // Verifica se a largura da janela é maior que o limite definido
 if (window.innerWidth > minWidthForChatbot) {
     (function () {
         window.onload = function () {
-            // Função para aplicar a animação de shake
-            function shakeScreen() {
-                document.body.classList.add('shake');
-                setTimeout(function() {
-                    document.body.classList.remove('shake');
-                }, 1000); // Remove a classe após 1 segundo (duração da animação)
+            // Função para aplicar a animação de shake no elemento do chatbot
+            function shakeChatbot() {
+                var chatbotElement = document.querySelector('.blip-chat-container');
+                if (chatbotElement) {
+                    chatbotElement.classList.add('shake');
+                    setTimeout(function() {
+                        chatbotElement.classList.remove('shake');
+                    }, 1000); // Remove a classe após 1 segundo (duração da animação)
+                }
             }
 
             // Configurar a animação de shake a cada 5 segundos (5000 milissegundos)
-            setInterval(shakeScreen, 5000);
+            setInterval(shakeChatbot, 5000);
 
             var blipClient = new BlipChat();
             blipClient.withAppKey('cG9ydGlmb2xpb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
