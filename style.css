@@ -96,6 +96,10 @@ header {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
 
+.container.my-5 .text-start.mb-5 h2 {
+    text-align: center;
+    font-weight: bold;
+}
 
 .card-deck {
     display: flex;
