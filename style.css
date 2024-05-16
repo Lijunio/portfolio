@@ -97,6 +97,12 @@ header {
 /*Página Portfolio*/
 
 
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     flex: 1 1 250px;
     max-width: 250px;
