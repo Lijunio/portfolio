@@ -11,7 +11,7 @@
             .withEventHandler(BlipChat.LOAD_EVENT, function () {
           blipClient.sendMessage({
                     "type": "text/plain",
-                    "content": "This is my first message"
+                    "content": "Olá"
             });
                 })
             .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
