@@ -117,7 +117,9 @@ header {
     width: 80%;
     margin: 10px auto 0; /* Espaço do topo e centralização */
     height: auto;
+    display: block;
   }
+  
   .card-title {
     text-align: center;
   }
