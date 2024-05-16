@@ -108,9 +108,10 @@ header {
 }
 
 .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 80%;
+    margin: 10px auto 0; /* Espaço do topo e centralização */
+    height: auto;
+    display: block;
 }
 
 .card-title {
