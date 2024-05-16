@@ -173,7 +173,7 @@ header {
     background-color: #4caf50;
     text-align: center;
     line-height: 30px;
-    color: white;
+    color: #333;
     border-radius: 25px;
     transition: width 0.4s ease;
 }
@@ -190,7 +190,7 @@ header {
 }
 
 .progress-container.completed .progress-bar span {
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 
