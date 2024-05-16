@@ -19,7 +19,7 @@
         bar.style.width = percentage + '%';
         if (percentage >= 100) {
             bar.parentElement.classList.add('completed');
-            text.textContent = 'Concluído';
+            text.textContent = '100% Concluído';
         } else {
             text.textContent = percentage + '%';
         }
