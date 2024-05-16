@@ -104,8 +104,8 @@ header {
 }
 
 .card {
-    flex: 1 1 500px; /* Aumenta a largura base do cartão */
-    max-width: 500px; /* Aumenta a largura máxima do cartão */
+    flex: 1 1 800px; /* Aumenta a largura base do cartão */
+    max-width: 800px; /* Aumenta a largura máxima do cartão */
     margin: 10px;
     display: flex;
     flex-direction: column;
