@@ -96,13 +96,8 @@ header {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
 .portfolio h1 {
-    font-size: 28px;
+    font-size: 18px;
 }
-
-p.especificacoes {
-    font-size: 20px;
-}
-
 
 .description {
     text-align: left;
