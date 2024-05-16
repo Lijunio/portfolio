@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const descriptionTriggers = document.querySelectorAll('.show-description');
     descriptionTriggers.forEach(trigger => {
         trigger.addEventListener('click', function() {
-            const description = this.parentNode.querySelector('.description');
-            if (description.style.display === 'none') {
-                description.style.display = 'block';
+            const description = this.previousElementSibling;
+            if (description.classList.contains('d-none')) {
+                description.classList.remove('d-none');
                 this.innerText = 'Minimizar';
             } else {
-                description.style.display = 'none';
+                description.classList.add('d-none');
                 this.innerText = 'Descrição do Projeto';
             }
         });
