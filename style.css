@@ -250,5 +250,5 @@ footer p {
 }
 
 .shake {
-    animation: shake 1s;
+    animation: shake 1s infinite;
 }

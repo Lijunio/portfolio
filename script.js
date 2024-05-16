@@ -3,37 +3,26 @@ var minWidthForChatbot = 768;
 
 // Verifica se a largura da janela é maior que o limite definido
 if (window.innerWidth > minWidthForChatbot) {
-    (function () {
-        window.onload = function () {
-            // Função para aplicar a animação de shake no botão do Blip Chat
-            function shakeChatbotButton() {
-                var chatbotButton = document.querySelector('.blip-chat-widget-launcher-button');
-                if (chatbotButton) {
-                    chatbotButton.classList.add('shake');
-                    setTimeout(function() {
-                        chatbotButton.classList.remove('shake');
-                    }, 1000); // Remove a classe após 1 segundo (duração da animação)
-                }
+    window.onload = function () {
+        var blipClient = new BlipChat();
+        blipClient.withAppKey('cG9ydGlmb2xpb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
+        .withEventHandler(BlipChat.LOAD_EVENT, function () {
+            blipClient.sendMessage({
+                "type": "text/plain",
+                "content": "Olá"
+            });
+
+            // Adiciona a classe 'shake' ao botão do Blip Chat
+            var chatbotButton = document.querySelector('.blip-chat-widget-launcher-button');
+            if (chatbotButton) {
+                chatbotButton.classList.add('shake');
             }
-
-            // Configurar a animação de shake a cada 5 segundos (5000 milissegundos)
-            setInterval(shakeChatbotButton, 5000);
-
-            var blipClient = new BlipChat();
-            blipClient.withAppKey('cG9ydGlmb2xpb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
-            .withEventHandler(BlipChat.LOAD_EVENT, function () {
-                blipClient.sendMessage({
-                    "type": "text/plain",
-                    "content": "Olá"
-                });
-            })
-            .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
-            .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
-            .build();
-        }
-    })();
+        })
+        .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
+        .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
+        .build();
+    };
 }
-
 
 
     function updateProgress(barId, textId, percentage) {
