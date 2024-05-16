@@ -82,26 +82,17 @@ header nav ul li a {
     }
 }
 
-
-#header-nome, #header-profissao {
-    font-weight: bold;
-    font-size: 28px; 
-    margin: 0; 
-}
-
-#header-profissao {
-    font-size: 18px; 
-}
-
-
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*LETRAS*/
 
 
-#header-nome {
+#header-nome, #header-profissao {
     font-weight: bold;
+}
+
+#header-nome {
     font-size: 28px;
-    margin: 0; 
+    margin: 0;
 }
 
 #header-profissao{
@@ -125,9 +116,11 @@ main {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*RESUMO*/
 
- #imagem-elijunio {
+#imagem-elijunio {
     width: 200px;
+    border-radius: 50%;
 }
+
 .resumo {
     display: flex;
     align-items: center; 
@@ -258,30 +251,30 @@ h3 {
 }
 
 .timeline-item:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -30px;
-  width: 3px;
-  height: calc(100% + 25px);
-  background: #BDBDBD;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    width: 3px;
+    height: calc(100% + 25px);
+    background: #BDBDBD;
 }
 
 .timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -33px;
-  height: 6px;
-  width: 8px;
-  background: black;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 6px;
+    width: 8px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--jet);
 }
 
 .timeline-text {
-  font-weight: var(--fw-300);
-  line-height: 1.6;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
