@@ -96,12 +96,6 @@ header {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Portfolio*/
 
-.card-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espaço entre os cartões */
-    justify-content: center;
-}
 
 .card {
     flex: 1 1 250px;
