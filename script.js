@@ -5,19 +5,19 @@ var minWidthForChatbot = 768;
 if (window.innerWidth > minWidthForChatbot) {
     (function () {
         window.onload = function () {
-            // Função para aplicar a animação de shake no elemento do chatbot
-            function shakeChatbot() {
-                var chatbotElement = document.querySelector('.blip-chat-container');
-                if (chatbotElement) {
-                    chatbotElement.classList.add('shake');
+            // Função para aplicar a animação de shake no botão do Blip Chat
+            function shakeChatbotButton() {
+                var chatbotButton = document.querySelector('.blip-chat-widget-launcher-button');
+                if (chatbotButton) {
+                    chatbotButton.classList.add('shake');
                     setTimeout(function() {
-                        chatbotElement.classList.remove('shake');
+                        chatbotButton.classList.remove('shake');
                     }, 1000); // Remove a classe após 1 segundo (duração da animação)
                 }
             }
 
             // Configurar a animação de shake a cada 5 segundos (5000 milissegundos)
-            setInterval(shakeChatbot, 5000);
+            setInterval(shakeChatbotButton, 5000);
 
             var blipClient = new BlipChat();
             blipClient.withAppKey('cG9ydGlmb2xpb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
