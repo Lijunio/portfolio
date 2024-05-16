@@ -100,21 +100,28 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .card {
-    flex: 0 0 48%;
-    margin-bottom: 20px;
+    flex: 0 0 45%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
 .card-img-top {
-    width: 80%;
-    margin: 10px auto 0; /* Espaço do topo e centralização */
-    height: auto;
-    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .card-title {
@@ -130,7 +137,7 @@ header {
     display: flex;
     justify-content: center;
 }
-  
+
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*Página Contato*/
 

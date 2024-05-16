@@ -1,19 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const descriptionTriggers = document.querySelectorAll('.show-description');
-    descriptionTriggers.forEach(trigger => {
-        trigger.addEventListener('click', function() {
-            const description = this.previousElementSibling;
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.show-description').forEach(function(element) {
+        element.addEventListener('click', function() {
+            var description = this.previousElementSibling;
             if (description.classList.contains('d-none')) {
                 description.classList.remove('d-none');
-                this.innerText = 'Minimizar';
+                this.textContent = 'Ocultar Descrição';
             } else {
                 description.classList.add('d-none');
-                this.innerText = 'Descrição do Projeto';
+                this.textContent = 'Descrição do Projeto';
             }
         });
     });
 });
-
 
     // Define o limite de largura da tela para inicializar o Blip Chat
     var minWidthForChatbot = 768;
