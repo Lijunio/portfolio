@@ -12,10 +12,11 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
     flex-wrap: wrap;
     width: 100%; 
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -27,9 +28,9 @@ body {
 .left-square, .right-square {
     box-sizing: border-box;
     padding: 20px;
-    width: 100%; 
-    max-width: 800px;
-    margin: 20px auto;
+    flex: 1; /* Faz com que os quadrados usem o espaço igualmente */
+    max-width: 45%; /* Define a largura máxima dos quadrados */
+    margin: 20px; /* Espaçamento entre os quadrados */
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -45,7 +46,6 @@ body {
 .right-square {
     background-color: #000;
     color: #fff;
-    margin-top: 50px;
 }
 
 img {
@@ -73,7 +73,6 @@ img {
     font-size: 14px;
 }
 
-
 /* Estilos para telas menores */
 @media (max-width: 768px) {
     .container {
@@ -83,10 +82,10 @@ img {
 
     .left-square, .right-square {
         width: 100%;
+        max-width: 100%;
     }
 
     .linkedin-button, .resume-button, .portfolio-button {
         padding: 10px 20px;
     }
-
 }
