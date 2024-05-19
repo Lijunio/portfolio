@@ -3,17 +3,16 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: black;
+    overflow-x: hidden; 
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
-    width: 85%; 
+    flex-wrap: wrap;
+    width: 100%; 
     margin: 0 auto;
-    margin-top: 100px;
-    padding: 20px; 
-
+    padding: 20px;
 }
 
 #imagem {
@@ -22,11 +21,11 @@ body {
 
 .left-square, .right-square {
     box-sizing: border-box;
-    padding: 20px; 
-    width: 100%; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    font-size: 16px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
 }
 
 .left-square {
@@ -55,14 +54,14 @@ img {
 
 .linkedin-button, .resume-button, .portfolio-button {
     display: inline-block;
-    padding: 10px 40px; 
+    padding: 10px 40px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     border: none;
-    margin: 10px 5px; 
-    font-size: 14px; 
+    margin: 10px 5px;
+    font-size: 14px;
 }
 
 footer {
@@ -70,20 +69,25 @@ footer {
     text-align: center;
     height: 40px;
     width: 100%;
-    margin-top: 280px; /* Ajuste conforme necessário para garantir espaço acima do footer */
+    margin-top: 280px;
 }
 
 /* Estilos para telas menores */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        padding: 10px; 
     }
 
     .left-square, .right-square {
-        width: 100%; 
+        width: 100%;
     }
 
     .linkedin-button, .resume-button, .portfolio-button {
-        padding: 10px 20px; 
+        padding: 10px 20px;
+    }
+
+    footer {
+        margin-top: 50px; 
     }
 }
