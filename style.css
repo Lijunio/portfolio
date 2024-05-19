@@ -30,6 +30,34 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        align-items: center;
+    }
+
+    .header-info {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .nav-item.d-md-none {
+        display: block !important;
+    }
+}
+
+
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*RESUMO*/
 
@@ -220,23 +248,7 @@ footer p {
     margin: 0;
 }
 
-/*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
-/*RESPONSIVIDADE*/
-@media screen and (max-width: 768px) {
-    .header-info h1, .header-info p {
-        text-align: center;
-    }
-    
-    .projects {
-        grid-template-columns: 1fr;
-    }
 
-    .button-style {
-        flex-basis: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-}
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*CHATBOT*/
 
