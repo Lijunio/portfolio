@@ -57,8 +57,13 @@ img {
     padding: 20px;
 }
 
+.about-info h2{
+    font-size: 18px;
+}
+
 .about-info p {
-    line-height: 1.5;
+    line-height: 1.7;
+    text-align: justify;
 }
 
 .linkedin-button, .resume-button, .portfolio-button {
