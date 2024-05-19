@@ -16,6 +16,11 @@ if (window.innerWidth > minWidthForChatbot) {
                 .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
                 .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
                 .build();
+
+                   // Adiciona a classe 'blip-chat-clicked' ao botão quando o botão é clicado
+                document.getElementById('blip-chat-open-iframe').addEventListener('click', function () {
+                document.getElementById('blip-chat-open-iframe').classList.add('blip-chat-clicked');
+            });
         };
     })();
 }

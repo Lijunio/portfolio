@@ -235,3 +235,37 @@ footer p {
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*CHATBOT*/
 
+#blip-chat-open-iframe {
+    bottom: 0 !important;
+    top: auto !important;
+    animation: shake 1s infinite; 
+    position: relative; 
+}
+
+#blip-chat-open-iframe::before {
+content: "Olá!\AMe chamo Eliza, como posso te ajudar?";
+position: absolute;
+display: block;
+top: -50px;
+left: -100px;
+padding: 6px;
+background-color: #c5d9fb;
+color: #3d3d3d;
+border-radius: 0.8125em 0.8125em 0.125em 0.8125em;
+white-space: pre-line; /* Mantém a quebra de linha */
+transform: translateX(-50%);
+width: 200px; /* Ajuste a largura conforme necessário */
+}
+
+.blip-chat-clicked::before {
+    display: none !important; /* Oculta o balão da mensagem quando o botão é clicado */
+}
+
+@keyframes shake {
+   0%, 100% {
+       transform: translateX(0);
+   }
+   50% {
+       transform: translateX(-10px);
+   }
+}
