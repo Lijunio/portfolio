@@ -22,7 +22,7 @@ body {
 }
 
 #imagem {
-    max-width: 100%; /* Ajusta a imagem para que não ultrapasse o contêiner */
+    max-width: 250px; 
 }
 
 .left-square, .right-square {
@@ -91,7 +91,7 @@ img {
 /* Estilos para telas menores */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas da tela */
+        padding: 10px; 
     }
 
     .container {
@@ -102,7 +102,11 @@ img {
     .left-square, .right-square {
         width: 100%;
         max-width: 100%;
-        margin: 10px 0; /* Ajusta a margem para evitar barra de rolagem */
+        margin: 10px 0; 
+    }
+
+    #imagem {
+        max-width: 100%; 
     }
 
     .linkedin-button, .resume-button, .portfolio-button {
