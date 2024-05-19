@@ -250,11 +250,11 @@ top: -50px;
 left: -100px;
 padding: 6px;
 background-color: #333;
-color: #3d3d3d;
+color: white;
 border-radius: 0.8125em 0.8125em 0.125em 0.8125em;
-white-space: pre-line; /* Mantém a quebra de linha */
+white-space: pre-line; 
 transform: translateX(-50%);
-width: 200px; /* Ajuste a largura conforme necessário */
+width: 200px; 
 }
 
 .blip-chat-clicked::before {
