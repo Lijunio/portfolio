@@ -260,20 +260,19 @@ footer p {
     top: auto !important;
     position: relative;
     display: none; 
-    opacity: 0;
-    animation: shake 1s infinite; 
+    opacity: 0; 
     transition: opacity 1s ease-in-out; 
 }
 
 #blip-chat-open-iframe.blip-chat-visible {
-    display: block !important; 
     opacity: 1; 
+    animation: shake 1s infinite; 
 }
 
 #blip-chat-open-iframe::before {
     content: "Olá!\A Caso queira conversar comigo clique aqui.";
     position: absolute;
-    display: block;
+    display: none; 
     top: -50px;
     left: -100px;
     padding: 6px;
@@ -283,6 +282,10 @@ footer p {
     white-space: pre-line;
     transform: translateX(-50%);
     width: 200px;
+}
+
+#blip-chat-open-iframe.blip-chat-visible::before {
+    display: block; 
 }
 
 .blip-chat-clicked::before {
