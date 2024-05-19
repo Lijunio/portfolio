@@ -43,6 +43,11 @@ body {
     text-align: center;
 }
 
+.left-square h4{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
 .right-square {
     background-color: #000;
     color: #fff;
@@ -58,7 +63,7 @@ img {
 }
 
 .about-info h2{
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .about-info p {
