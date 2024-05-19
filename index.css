@@ -12,8 +12,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: center;
+    align-items: center; 
     flex-wrap: wrap;
     width: 100%; 
     max-width: 1200px;
@@ -28,9 +28,9 @@ body {
 .left-square, .right-square {
     box-sizing: border-box;
     padding: 20px;
-    flex: 1; /* Faz com que os quadrados usem o espaço igualmente */
-    max-width: 45%; /* Define a largura máxima dos quadrados */
-    margin: 20px; /* Espaçamento entre os quadrados */
+    flex: 1; 
+    max-width: 45%; 
+    margin: 20px; 
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -43,9 +43,14 @@ body {
     text-align: center;
 }
 
-.left-square h4{
-    font-size: 20px;
-    margin-bottom: 50px;
+.left-square h2 {
+    font-size: 24px;
+    margin-bottom: 5px; 
+}
+
+.left-square h4 {
+    font-size: 18px;
+    margin-top: 0; 
 }
 
 .right-square {
@@ -62,7 +67,7 @@ img {
     padding: 20px;
 }
 
-.about-info h2{
+.about-info h2 {
     font-size: 28px;
 }
 
