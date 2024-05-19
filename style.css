@@ -244,14 +244,15 @@ footer p {
     bottom: 0 !important;
     top: auto !important;
     position: relative;
-    display: none; /* Inicialmente escondido */
-    opacity: 0; /* Inicialmente transparente */
-    transition: opacity 1s ease-in-out; /* Animação de desvanecimento */
+    display: none; 
+    opacity: 0;
+    animation: shake 1s infinite; 
+    transition: opacity 1s ease-in-out; 
 }
 
 #blip-chat-open-iframe.blip-chat-visible {
-    display: block !important; /* Mostrar quando visível */
-    opacity: 1; /* Totalmente opaco quando visível */
+    display: block !important; 
+    opacity: 1; 
 }
 
 #blip-chat-open-iframe::before {
@@ -270,7 +271,7 @@ footer p {
 }
 
 .blip-chat-clicked::before {
-    display: none !important; /* Oculta o balão da mensagem quando o botão é clicado */
+    display: none !important; 
 }
 
 @keyframes shake {
