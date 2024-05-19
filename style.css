@@ -46,16 +46,19 @@ header {
 
     .nav {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .nav-item {
-        text-align: center;
+    .nav-link {
+        padding: 5px 10px; 
+        font-size: 14px; 
     }
 
     .nav-item.d-md-none {
         display: block !important;
     }
 }
+
 
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
