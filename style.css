@@ -24,6 +24,11 @@ header {
     font-size: 18px;
 }
 
+@media (min-width: 768px) {
+    .nav-item.d-md-none {
+        display: none !important;
+    }
+}
 
 /*----------------------------------------------------------/-----------------------------------------------------------------------------------------------*/
 /*RESUMO*/
@@ -243,7 +248,7 @@ footer p {
 }
 
 #blip-chat-open-iframe::before {
-content: "Olá!\ACaso queira conversar comigo clique aqui.";
+content: "Olá!\A Caso queira conversar comigo clique aqui.";
 position: absolute;
 display: block;
 top: -50px;
