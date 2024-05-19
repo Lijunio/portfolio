@@ -22,10 +22,11 @@ if (window.innerWidth > minWidthForChatbot) {
 
             setTimeout(function () {
                 chatButton.classList.add('blip-chat-visible');
-                chatButton.addEventListener('click', function () {
-                    chatButton.classList.add('blip-chat-clicked');
-                });
             }, 5000); 
+
+            chatButton.addEventListener('click', function () {
+                chatButton.classList.add('blip-chat-clicked');
+            });
         };
     })();
 }
