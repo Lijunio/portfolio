@@ -5,22 +5,28 @@ var minWidthForChatbot = 768;
 if (window.innerWidth > minWidthForChatbot) {
     (function () {
         window.onload = function () {
-            var blipClient = new BlipChat();
-            blipClient.withAppKey('cG9ydGlmb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
-                .withEventHandler(BlipChat.LOAD_EVENT, function () {
-                    blipClient.sendMessage({
-                        "type": "text/plain",
-                        "content": "Olá"
-                    });
-                })
-                .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
-                .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
-                .build();
+            setTimeout(function () {
+                var blipClient = new BlipChat();
+                blipClient.withAppKey('cG9ydGlmb2xpbzg6NjRlYmI3NTYtMTc5Yy00MmIwLWFmZjQtYzM4NGQ3NTFkNzNm')
+                    .withEventHandler(BlipChat.LOAD_EVENT, function () {
+                        blipClient.sendMessage({
+                            "type": "text/plain",
+                            "content": "Olá"
+                        });
+                    })
+                    .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
+                    .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
+                    .build();
 
-                   // Adiciona a classe 'blip-chat-clicked' ao botão quando o botão é clicado
-                document.getElementById('blip-chat-open-iframe').addEventListener('click', function () {
-                document.getElementById('blip-chat-open-iframe').classList.add('blip-chat-clicked');
-            });
+                // Mostra o chatbot com animação após 5 segundos
+                var chatButton = document.getElementById('blip-chat-open-iframe');
+                chatButton.classList.add('blip-chat-visible');
+
+                // Adiciona a classe 'blip-chat-clicked' ao botão quando o botão é clicado
+                chatButton.addEventListener('click', function () {
+                    chatButton.classList.add('blip-chat-clicked');
+                });
+            }, 5000); // 5000ms = 5 segundos
         };
     })();
 }
