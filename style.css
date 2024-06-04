@@ -160,6 +160,7 @@ header {
 .card:hover {
     transform: translateY(-10px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #d3d3d3;
 }
 
 .card-img-top {
@@ -187,6 +188,26 @@ header {
 
 .card-text {
     flex-grow: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 13; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text.expanded {
+    -webkit-line-clamp: unset; 
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+    font-weight: bold; 
 }
 
 .card a {
@@ -197,6 +218,7 @@ header {
 .card a:hover {
     text-decoration: none;
 }
+
 
 .progress-container {
     width: 100%;

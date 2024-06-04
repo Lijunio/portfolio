@@ -27,10 +27,19 @@ if (window.innerWidth > minWidthForChatbot) {
             chatButton.addEventListener('click', function () {
                 chatButton.classList.add('blip-chat-clicked');
             });
+
+            // Verifica se os textos ultrapassam 13 linhas e exibe o botão "Continuar lendo" se necessário
+            var cardTexts = document.querySelectorAll('.card-text');
+            cardTexts.forEach(function (text) {
+                var lineHeight = parseInt(window.getComputedStyle(text).lineHeight);
+                var maxLines = 13;
+                if (text.scrollHeight > lineHeight * maxLines) {
+                    text.nextElementSibling.style.display = 'block'; // Exibe o botão "Continuar lendo"
+                }
+            });
         };
     })();
 }
-
 
 function updateProgress(barId, textId, percentage) {
     var bar = document.getElementById(barId);
@@ -47,3 +56,15 @@ function updateProgress(barId, textId, percentage) {
 // Atualiza as barras de progresso com as porcentagens desejadas
 updateProgress('progress-1', 'progress-text-1', 100);
 updateProgress('progress-2', 'progress-text-2', 40);
+updateProgress('progress-3', 'progress-text-3', 100);
+
+function toggleText(button) {
+    const cardText = button.previousElementSibling;
+    if (cardText.classList.contains('expanded')) {
+        cardText.classList.remove('expanded');
+        button.textContent = 'Continuar lendo';
+    } else {
+        cardText.classList.add('expanded');
+        button.textContent = 'Mostrar menos';
+    }
+}
