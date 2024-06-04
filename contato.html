@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -32,13 +33,19 @@
     <div class="row">
       <div class="col-md-6 mb-4">
         <div class="bg-dark text-white p-4 h-100">
-          <h1>Contato</h1>
-          <p>Se você tem alguma dúvida, feedback ou gostaria de discutir um pouco mais sobre minhas qualificações e habilidades, não hesite em entrar em contato!
-            <br><br>
-            Além disso, o ícone do WhatsApp ao lado funciona como um botão que irá direcionar diretamente para o meu WhatsApp pessoal.
-          </p>
+            <h1>Contato</h1>
+            <p>Entre em contato comigo através das informações abaixo ou envie uma mensagem usando o formulário.</p>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required class="form-control mb-2"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required class="form-control mb-2"><br>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required class="form-control mb-2"></textarea><br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
-      </div>
+    </div>
       <div class="col-md-6 mb-4">
         <div class="bg-light p-4 h-100">
           <h1>Informações de contato:</h1>
@@ -56,6 +63,23 @@
       </div>
     </div>
   </main>
+
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("922JgcvAEBKtkOd3Y"); 
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_t4yqi45', 'template_z967x3u', this)
+            .then(function() {
+                alert('Mensagem enviada com sucesso!');
+                document.getElementById('contact-form').reset(); 
+            }, function(error) {
+                alert('Erro ao enviar mensagem: ' + JSON.stringify(error));
+            });
+    });
+</script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
