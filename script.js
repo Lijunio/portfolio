@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     "content": "Olá"
                 });
             })
-            .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47d6-94cf-5aff5fa9cfd2"})
+            .withButton({"color":"#333","icon":"https://blipmediastore.blip.ai/public-medias/Media_a4a37081-2224-47b6-94cf-5aff5fa9cfd2"})
             .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
             .build();
 
