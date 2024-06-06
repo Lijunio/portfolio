@@ -48,36 +48,25 @@ document.addEventListener('DOMContentLoaded', function () {
     updateProgress('progress-2-large', 'progress-text-2-large', 100);
     updateProgress('progress-3-large', 'progress-text-3-large', 40);
 
-    // Adiciona o botão "Continuar lendo" apenas se necessário
-    function checkReadMoreButtons() {
-        var cardTexts = document.querySelectorAll('.card-text');
-        cardTexts.forEach(function (text) {
-            var lineHeight = parseInt(window.getComputedStyle(text).lineHeight);
-            var maxLines = window.innerWidth > 768 ? 14 : 18;
 
-            if (text.scrollHeight > lineHeight * maxLines) {
-                text.nextElementSibling.style.display = 'block'; // Exibe o botão "Continuar lendo"
-            } else {
-                text.nextElementSibling.style.display = 'none'; // Esconde o botão "Continuar lendo" se não necessário
-            }
-        });
-    }
-
-    checkReadMoreButtons();
-
-    window.toggleText = function (button) {
-        const cardText = button.previousElementSibling;
-        if (cardText.classList.contains('expanded')) {
-            cardText.classList.remove('expanded');
-            button.textContent = 'Continuar lendo';
-        } else {
-            cardText.classList.add('expanded');
-            button.textContent = 'Mostrar menos';
-        }
-    };
-
-    // Rechecagem dos botões quando a janela for redimensionada
-    window.addEventListener('resize', function() {
-        checkReadMoreButtons();
-    });
-});
+     // Adiciona o botão "Continuar lendo" apenas se necessário
+     var cardTexts = document.querySelectorAll('.card-text');
+     cardTexts.forEach(function (text) {
+         var lineHeight = parseInt(window.getComputedStyle(text).lineHeight);
+         var maxLines = 15;
+         if (text.scrollHeight > lineHeight * maxLines) {
+             text.nextElementSibling.style.display = 'block'; // Exibe o botão "Continuar lendo"
+         }
+     });
+ 
+     window.toggleText = function (button) {
+         const cardText = button.previousElementSibling;
+         if (cardText.classList.contains('expanded')) {
+             cardText.classList.remove('expanded');
+             button.textContent = 'Continuar lendo';
+         } else {
+             cardText.classList.add('expanded');
+             button.textContent = 'Mostrar menos';
+         }
+     };
+ });
