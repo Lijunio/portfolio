@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,20 +35,16 @@
       <p class="lead">Seja bem-vindo ao meu espaço criativo, onde os códigos se concretizam e a programação se transforma em realidade tangível. Aqui, a inovação e a criatividade se unem para dar vida a soluções tecnológicas de excelência.</p>
     </section>
 
-    <main class="container my-5">
-      <section class="text-start mb-5">
-        <h2>Desenvolvimento</h2>
-      </section>
-
-    <section>
-
-
-      <div class="card-deck">
-        <div class="card">
-            <a href="https://lijunio.github.io/amigo-oculto-2023/" target="_blank" rel="noopener noreferrer">
+    <section class="d-md-none">
+      <div id="projectCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="project-title">Projeto 1</h2>
+            <div class="card">
+              <a href="https://lijunio.github.io/amigo-oculto-2023/" target="_blank" rel="noopener noreferrer">
                 <img class="card-img-top" src="./projetos/natal.png" alt="Projeto 1">
-            </a>
-            <div class="card-body">
+              </a>
+              <div class="card-body">
                 <h5 class="card-title">Amigo Oculto Natal Família Souza</h5>
                 <p class="card-text">
                     Este projeto utiliza JavaScript, HTML/CSS para organizar e executar o sorteio do amigo oculto entre membros da família. Oferece sorteio aleatório, restrições personalizadas e feedback interativo por meio de um pop-up. Ao final do sorteio, o sistema gera automaticamente um arquivo de resultado para download, facilitando a distribuição dos resultados entre os participantes. Eu fiz esse site pois não queria pagar sorteio em outros sites, pois tinha muitas restrições.
@@ -58,51 +55,106 @@
                         <span id="progress-text-1">100% Concluído</span>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <a href="https://danirpadua.github.io/descomplica" target="_blank" rel="noopener noreferrer">
-                <img class="card-img-top" src="./projetos/descomplica.png" alt="Projeto 2">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Descomplica Consultoria Academica</h5>
+          </div>
+          <div class="carousel-item">
+            <h2 class="project-title">Projeto 2</h2>
+            <div class="card">
+              <a href="https://lijunio.github.io/bioguard/" target="_blank" rel="noopener noreferrer">
+                <img class="card-img-top" src="./projetos/bioguard.png" alt="Projeto 2">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Bioguard</h5>
                 <p class="card-text">
-                    Website de consultoria acadêmica desenvolvido utilizando as linguagens HTML, CSS, JavaScript e PHP com o intuito de oferecer uma experiência fluida e interativa aos usuários. A interação permite explorar a variedade de serviços acadêmicos ofertados. Além disso, foi incluída a funcionalidade de solicitação de orçamentos através do preenchimento de formulários e conexão direta com o e-mail e contato direto através de API com o WhatsApp do consultor para resolução de dúvidas.
+                  Este projeto integra um leitor de biometria em um sistema completo de registro de ponto para funcionários. Utilizando JavaScript, HTML/CSS no frontend e Node.js com MySQL no backend, o BioGuard oferece funcionalidades robustas de gerenciamento de dados. O sistema inclui a criação e consulta de registros de ponto, gestão de funcionários e departamentos, tudo exibido de forma intuitiva e responsiva. A interface foi desenvolvida para ser amigável e eficiente, garantindo a segurança e precisão no controle de acesso dos funcionários. A página de login possui opções distintas para funcionários e gerentes, cada uma redirecionando para funcionalidades específicas. Este projeto foi desenvolvido para atender às necessidades de empresas que buscam modernizar e automatizar seus processos de registro de ponto, proporcionando uma solução confiável e integrada.
                 </p>
                 <button class="read-more-btn" style="display: none;" onclick="toggleText(this)">Continuar lendo</button>
                 <div class="progress-container">
                     <div class="progress-bar" id="progress-2">
-                        <span id="progress-text-2">40% Concluído</span>
+                        <span id="progress-text-2">100% Concluído</span>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <a href="https://lijunio.github.io/bioguard/" target="_blank" rel="noopener noreferrer">
-                <img class="card-img-top" src="./projetos/bioguard.png" alt="Projeto 3">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Bioguard</h5>
+          </div>
+          <div class="carousel-item">
+            <h2 class="project-title">Projeto 3</h2>
+            <div class="card">
+              <a href="https://danirpadua.github.io/descomplica" target="_blank" rel="noopener noreferrer">
+                <img class="card-img-top" src="./projetos/descomplica.png" alt="Projeto 3">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Descomplica Consultoria Academica</h5>
                 <p class="card-text">
-                    Este projeto integra um leitor de biometria em um sistema completo de registro de ponto para funcionários. Utilizando JavaScript, HTML/CSS no frontend e Node.js com MySQL no backend, o BioGuard oferece funcionalidades robustas de gerenciamento de dados. O sistema inclui a criação e consulta de registros de ponto, gestão de funcionários e departamentos, tudo exibido de forma intuitiva e responsiva. A interface foi desenvolvida para ser amigável e eficiente, garantindo a segurança e precisão no controle de acesso dos funcionários. A página de login possui opções distintas para funcionários e gerentes, cada uma redirecionando para funcionalidades específicas. Este projeto foi desenvolvido para atender às necessidades de empresas que buscam modernizar e automatizar seus processos de registro de ponto, proporcionando uma solução confiável e integrada.
+                  Website de consultoria acadêmica desenvolvido utilizando as linguagens HTML, CSS, JavaScript e PHP com o intuito de oferecer uma experiência fluida e interativa aos usuários. A interação permite explorar a variedade de serviços acadêmicos ofertados. Além disso, foi incluída a funcionalidade de solicitação de orçamentos através do preenchimento de formulários e conexão direta com o e-mail e contato direto através de API com o WhatsApp do consultor para resolução de dúvidas.
                 </p>
                 <button class="read-more-btn" style="display: none;" onclick="toggleText(this)">Continuar lendo</button>
                 <div class="progress-container">
                     <div class="progress-bar" id="progress-3">
-                        <span id="progress-text-3">100% Concluído</span>
+                        <span id="progress-text-3">40% Concluído</span>
                     </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
+      </div>
     </section>
+
+    <div class="card-deck d-none d-md-flex">
+      <div class="card">
+        <a href="https://lijunio.github.io/amigo-oculto-2023/" target="_blank" rel="noopener noreferrer">
+          <img class="card-img-top" src="./projetos/natal.png" alt="Projeto 1">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Amigo Oculto Natal Família Souza</h5>
+          <p class="card-text">
+            Este projeto utiliza JavaScript, HTML/CSS para organizar e executar o sorteio do amigo oculto entre membros da família. Oferece sorteio aleatório, restrições personalizadas e feedback interativo por meio de um pop-up. Ao final do sorteio, o sistema gera automaticamente um arquivo de resultado para download, facilitando a distribuição dos resultados entre os participantes. Eu fiz esse site pois não queria pagar sorteio em outros sites, pois tinha muitas restrições.
+          </p>
+          <button class="read-more-btn" style="display: none;" onclick="toggleText(this)">Continuar lendo</button>
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-1-large">
+              <span id="progress-text-1-large">100% Concluído</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://lijunio.github.io/bioguard/" target="_blank" rel="noopener noreferrer">
+          <img class="card-img-top" src="./projetos/bioguard.png" alt="Projeto 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bioguard</h5>
+          <p class="card-text">
+            Este projeto integra um leitor de biometria em um sistema completo de registro de ponto para funcionários. Utilizando JavaScript, HTML/CSS no frontend e Node.js com MySQL no backend, o BioGuard oferece funcionalidades robustas de gerenciamento de dados. O sistema inclui a criação e consulta de registros de ponto, gestão de funcionários e departamentos, tudo exibido de forma intuitiva e responsiva. A interface foi desenvolvida para ser amigável e eficiente, garantindo a segurança e precisão no controle de acesso dos funcionários. A página de login possui opções distintas para funcionários e gerentes, cada uma redirecionando para funcionalidades específicas. Este projeto foi desenvolvido para atender às necessidades de empresas que buscam modernizar e automatizar seus processos de registro de ponto, proporcionando uma solução confiável e integrada.
+          </p>
+          <button class="read-more-btn" style="display: none;" onclick="toggleText(this)">Continuar lendo</button>
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-2-large">
+              <span id="progress-text-2-large">100% Concluído</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://danirpadua.github.io/descomplica" target="_blank" rel="noopener noreferrer">
+          <img class="card-img-top" src="./projetos/descomplica.png" alt="Projeto 3">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Descomplica Consultoria Academica</h5>
+          <p class="card-text">
+            Website de consultoria acadêmica desenvolvido utilizando as linguagens HTML, CSS, JavaScript e PHP com o intuito de oferecer uma experiência fluida e interativa aos usuários. A interação permite explorar a variedade de serviços acadêmicos ofertados. Além disso, foi incluída a funcionalidade de solicitação de orçamentos através do preenchimento de formulários e conexão direta com o e-mail e contato direto através de API com o WhatsApp do consultor para resolução de dúvidas.
+          </p>
+          <button class="read-more-btn" style="display: none;" onclick="toggleText(this)">Continuar lendo</button>
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-3-large">
+              <span id="progress-text-3-large">40% Concluído</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
