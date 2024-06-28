@@ -1,7 +1,6 @@
-// Define o limite de largura da tela para inicializar o Blip Chat
+// tela para inicializar o Blip
 var minWidthForChatbot = 768;
 
-// Verifica se a largura da janela é maior que o limite definido
 if (window.innerWidth > minWidthForChatbot) {
     (function () {
         window.onload = function () {
@@ -28,19 +27,18 @@ if (window.innerWidth > minWidthForChatbot) {
                 chatButton.classList.add('blip-chat-clicked');
             });
 
-            // Verifica se os textos ultrapassam 13 linhas e exibe o botão "Continuar lendo" se necessário
+            //13 linhas
             var cardTexts = document.querySelectorAll('.card-text');
             cardTexts.forEach(function (text) {
                 var lineHeight = parseInt(window.getComputedStyle(text).lineHeight);
                 var maxLines = 15;
                 if (text.scrollHeight > lineHeight * maxLines) {
-                    text.nextElementSibling.style.display = 'block'; // Exibe o botão "Continuar lendo"
+                    text.nextElementSibling.style.display = 'block';
                 }
             });
         };
     })();
 }
-
 
 function updateProgress(barId, textId, percentage) {
     var bar = document.getElementById(barId);
@@ -54,24 +52,25 @@ function updateProgress(barId, textId, percentage) {
     }
 }
 
-    // Pequenas telas
-    updateProgress('progress-1', 'progress-text-1', 100);
-    updateProgress('progress-2', 'progress-text-2', 100);
-    updateProgress('progress-3', 'progress-text-3', 40);
+// pequena
+updateProgress('progress-1', 'progress-text-1', 100);
+updateProgress('progress-2', 'progress-text-2', 100);
+updateProgress('progress-3', 'progress-text-3', 100);
+updateProgress('progress-4', 'progress-text-4', 40);
 
-    // Telas grandes
-    updateProgress('progress-1-large', 'progress-text-1-large', 100);
-    updateProgress('progress-2-large', 'progress-text-2-large', 100);
-    updateProgress('progress-3-large', 'progress-text-3-large', 40);
+// grande
+updateProgress('progress-1-large', 'progress-text-1-large', 100);
+updateProgress('progress-2-large', 'progress-text-2-large', 100);
+updateProgress('progress-3-large', 'progress-text-3-large', 100);
+updateProgress('progress-4-large', 'progress-text-4-large', 40);
 
- 
-     window.toggleText = function (button) {
-         const cardText = button.previousElementSibling;
-         if (cardText.classList.contains('expanded')) {
-             cardText.classList.remove('expanded');
-             button.textContent = 'Continuar lendo';
-         } else {
-             cardText.classList.add('expanded');
-             button.textContent = 'Mostrar menos';
-         }
-     };
+window.toggleText = function (button) {
+    const cardText = button.previousElementSibling;
+    if (cardText.classList.contains('expanded')) {
+        cardText.classList.remove('expanded');
+        button.textContent = 'Continuar lendo';
+    } else {
+        cardText.classList.add('expanded');
+        button.textContent = 'Mostrar menos';
+    }
+};
